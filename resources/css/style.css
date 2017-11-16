@@ -64,6 +64,17 @@ header .menu {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+}
+
 /* Navigation menu. */
 
 nav {
@@ -79,7 +90,7 @@ nav li {
   display: none;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
   
   nav ul {
     display: none;
@@ -122,6 +133,19 @@ header .flex {
 
   .banner h1 {
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
   }
 }
 
