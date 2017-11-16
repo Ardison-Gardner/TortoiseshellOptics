@@ -8,6 +8,8 @@ html {
 
 body {
   line-height: 1.4rem;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -30,7 +32,13 @@ header {
   height: 30rem;
 }
 
-nav {
+header img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+header .menu {
   padding: 1rem 0;
   background-color: cadetblue;
   color: white;
@@ -39,28 +47,43 @@ nav {
   justify-content: space-between;
 }
 
-nav img {
-  height: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 1rem;
-}
-
-nav div {
+.logo {
   display: flex;
   align-items: center;
 }
 
 /* Navigation menu. */
 
-ul {
+nav {
   margin-right: 1rem;
 }
 
-ul li {
+nav li {
   display: inline;
   padding: 0 1rem;
 }
 
 .mobile-menu {
   display: none;
+}
+
+/* Banner. */
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .67em 0;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.banner {
+  background-color: white;
+  padding: 0.75rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
 }
