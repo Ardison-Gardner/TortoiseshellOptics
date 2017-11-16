@@ -86,7 +86,7 @@ nav li {
   padding: 0 1rem;
 }
 
-.nav-menu {
+.expand-menu {
   display: none;
 }
 
@@ -96,7 +96,7 @@ nav li {
     display: none;
   }
 
-  .nav-menu {
+  .expand-menu {
     display: block;
     text-align: center;
   }
@@ -116,7 +116,7 @@ header .flex {
 
 .banner {
   background-color: white;
-  padding: 0.75rem 5rem;
+  padding: 1.5rem 5rem;
   display: inline-block;
   margin-top: 10rem;
   margin-right: -2rem;
@@ -155,6 +155,15 @@ header .flex {
   justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .support {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+}
+
 /* Services. */
 
 .service {
@@ -174,6 +183,14 @@ header .flex {
 
 .service img.paper {
   width: 3.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
 }
 
 /* Information section. */
@@ -198,16 +215,42 @@ header .flex {
   max-width: 10rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .information {
+    width: auto;
+  }
+
+  .information p {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 0.77rem;
+  }
+
+  .title {
+    width: 100%;
+    max-width:100%;
+    text-align: center;
+  }
+}
+
 /* Footer. */
 
 footer {
   background-color: azure;
-  padding: 4rem 2rem;
+  padding: 4rem;
   align-items: center;
 }
 
 footer img {
   height: 1.5rem;
-  margin-left: 2rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
 }
